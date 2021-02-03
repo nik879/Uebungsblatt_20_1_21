@@ -25,18 +25,15 @@ public class EmployeeManager {
     public HashMap<String, Double> getSalaryByDepartment() {
         HashMap<String, Double> DepartmentSalary = new HashMap<>();
         double salary=0.0;
-        for (Employee employee : Employees) {
 
+        for (Employee employee : Employees) {
             if (DepartmentSalary.containsKey(employee.department)) {
                 salary += employee.getFullsalary();
                 DepartmentSalary.put(employee.department, salary);
             } else {
-//                salary = 0;
                 salary = employee.getFullsalary();
                 DepartmentSalary.put(employee.department, employee.getFullsalary());
-
             }
-
         }
 
         return DepartmentSalary;

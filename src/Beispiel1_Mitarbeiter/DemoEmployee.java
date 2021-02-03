@@ -26,10 +26,13 @@ public class DemoEmployee {
         System.out.println("em.calcTotalSalary() = " + em.calcTotalSalary());
         System.out.println("----------------------------------");
 
-        FixCommissionEmployee Konsul = new FixCommissionEmployee("Konsul", "", "Dogschool", 840000, 8000);
-        FixCommissionEmployee Konsul2 = new FixCommissionEmployee("Konsul", "", "Dogschool", 840000, 8000);
+        FixCommissionEmployee Konsul = new FixCommissionEmployee("Konsul", "", "IT", 840000, 8000);
+        FixCommissionEmployee Konsul2 = new FixCommissionEmployee("Konsul", "", "IT", 840000, 8000);
+        Employee Konsul3 = new Employee("Konsul", "", "Dogschool", 840000);
+
         em.addEmployee(Konsul);
         em.addEmployee(Konsul2);
+        em.addEmployee(Konsul3);
         System.out.println(em);
 
         System.out.println("----------------------------------");
